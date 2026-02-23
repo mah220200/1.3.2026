@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Graduation A4</title>
+
+<style>
+@page {
+    size: A4;
+    margin: 0;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#ccc;
+    display:flex;
+    justify-content:center;
+    padding:20px 0;
+}
+
+/* Khổ giấy A4 */
+.a4{
+    width:210mm;
+    height:297mm;
+    background:#e3cbd0;
+    position:relative;
+    padding:30mm 20mm;
+    font-family:'Segoe UI', sans-serif;
+}
+
+/* Căn giữa toàn bộ nội dung */
+.content{
+    text-align:center;
+}
+
+/* Tiêu đề */
+.title{
+    font-family:cursive;
+    font-size:28px;
+}
+
+.name{
+    font-size:42px;
+    color:#ff5c5c;
+    font-weight:bold;
+    margin:15px 0;
+}
+
+/* Ảnh */
+.center-img img{
+    width:200px;
+    margin:15px 0;
+}
+
+/* Đường kẻ */
+.line{
+    border-bottom:2px dashed #000;
+    width:60%;
+    margin:15px auto;
+}
+
+/* Ngày */
+.date{
+    font-size:32px;
+    letter-spacing:6px;
+}
+
+/* Thông tin */
+.info{
+    font-size:20px;
+    margin-top:20px;
+}
+
+.info p{
+    margin:8px 0;
+}
+
+/* Khung lời nhắn */
+.message{
+    margin:40px auto 0;
+    width:70%;
+    background:#f3a6c5;
+    border:5px solid #ff4fd8;
+    border-radius:25px;
+    padding:25px;
+    font-size:18px;
+    line-height:1.6;
+}
+
+/* Sticker */
+.sticker{
+    position:absolute;
+    font-size:50px;
+}
+
+.star1{ top:20mm; left:15mm;}
+.star2{ top:25mm; right:15mm;}
+.rabbit{ bottom:20mm; right:20mm;}
+.heart{ bottom:30mm; left:20mm;}
+
+</style>
+</head>
+
+<body>
+
+<div class="a4">
+
+    <div class="content">
+
+        <div class="title">Graduation<br>From</div>
+        <div class="name">Nguyễn Đức Mạnh</div>
+
+        <div class="center-img">
+            <video src="mew.mp4" alt="cat" controls autoplay loop muted>
+                <style>
+                    video{
+                        width:200px;
+                        margin:auto;
+                    }
+                    </style>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="date">01 | 03 | 2026</div>
+
+        <div class="line"></div>
+
+        <div class="info">
+            <p>⏰ 10h30 - 12h</p>
+            <p>📍 THPT Xuân Giang</p>
+            <p>🏫 Lớp: 12D2</p>
+        </div>
+
+        <div class="message">
+            Đây là ngày mình muốn lưu giữ những khoảnh khắc đẹp nhất của tuổi học trò.  
+            Thật hạnh phúc khi trong những bức ảnh thanh xuân ấy có sự hiện diện của bạn 💕
+        </div>
+
+    </div>
+
+    <!-- Sticker -->
+    <div class="sticker star1">⭐</div>
+    <div class="sticker star2">🌟</div>
+    <div class="sticker rabbit">🐰</div>
+    <div class="sticker heart">💗</div>
+
+</div>
+
+</body>
+</html>
